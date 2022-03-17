@@ -5,14 +5,12 @@
 
 let n = [2 , 4 , 7 , 9 , 10 , 12 , 15];
 
-let somma = n + i;
-
-totale = somma;
+let sum = 0;
 
 
 for (let i = 1; i < n.length; i = i + 2 ) {
-
- document.getElementById("stamp").innerHTML += `${totale}`
-  
+ 
+    sum += n[i];
+    document.getElementById("stamp").innerHTML = `${sum}`
 }
 
